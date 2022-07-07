@@ -14,7 +14,7 @@ function Blog() {
        let data;
 
        axios
-           .get("https://kalwaniyatwo.herokuapp.com")
+           .get("https://bansaladiti.herokuapp.com")
            .then((res) => {
                data = res.data;
                setDetail(data)
@@ -24,7 +24,7 @@ function Blog() {
 
    const handleSubmit = (e) => {
      axios
-       .post("https://kalwaniyatwo.herokuapp.com", {
+       .post("https://bansaladiti.herokuapp.com", {
          title: title,
          blogbody: blogbody,
          links :links,
